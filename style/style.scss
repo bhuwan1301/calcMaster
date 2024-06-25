@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&display=swap");
+
+$bgcolor: rgb(0, 0, 53);
+$container-border: 2px solid rgba(33, 33, 33);
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $bgcolor;
+    font-family: "Playwrite FR Moderne", sans-serif;
+}
+
+header h1{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+div.container{
+    background-color: rgb(33, 33, 33);
+    border: $container-border;
+    border-radius: 15px;
+    height: 88vh;
+    width: 30vw;
+    margin-bottom: 6vh;
+    margin-left: 35vw;
+    box-shadow: 10px 10px 15px rgb(0, 0, 20);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.screen, .buttons, .button{
+    border: 1px solid rgba(33, 33, 33);
+    border-radius: 15px;
+}
+
+.screen{
+    background-color: rgb(97, 97, 97);
+    margin: 10px;
+    height: 20%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    font-size: 40px;
+}
+
+.buttons{
+    margin: 10px;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button, button{
+    width: 25%;
+    height: 20%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 2px 2px black;
+}
+.button:hover{
+    color: black;
+    background-color: white;
+}
+
+
+
+@media screen and (max-width: 992px){
+    div.container{
+        height: 80vh;
+        margin-top: 10vh;
+        width: 70vw;
+        margin-left: 15vw;
+    }
+}
+@media screen and (max-width: 600px){
+    div.container{
+        height: 66vh;
+        margin-top: 17vh;
+    }
+}
