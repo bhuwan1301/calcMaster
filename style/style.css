@@ -44,7 +44,7 @@ div.container {
   align-items: center;
   color: white;
   overflow: hidden;
-  font-size: 40px;
+  font-size: 2rem;
 }
 
 .buttons {
@@ -79,10 +79,16 @@ div.container {
     width: 70vw;
     margin-left: 15vw;
   }
+  .screen {
+    font-size: 2rem;
+  }
 }
 @media screen and (max-width: 600px) {
   div.container {
     height: 66vh;
     margin-top: 17vh;
+  }
+  .screen {
+    font-size: 1.3rem;
   }
 }/*# sourceMappingURL=style.css.map */
