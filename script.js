@@ -16,6 +16,12 @@ document.getElementById("equals").addEventListener("click", function () {
     let exp = screenItem.innerHTML;
     let val = evaluateExpression(exp);
     screenItem.innerHTML = val;
+    if (val != "Invalid expression") {
+        const node = document.createElement("p");
+        node.innerHTML = exp + " = " + val;
+        let history = document.getElementById("history");
+        history.insertBefore(node, history.firstChild);
+    }
 })
 
 

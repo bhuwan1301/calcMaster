@@ -20,6 +20,14 @@ header h1{
     text-align: center;
     color: yellow;
     font-size: 3rem;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 div.container{
@@ -28,8 +36,8 @@ div.container{
     border-radius: 15px;
     height: 88vh;
     width: 30vw;
-    margin-bottom: 6vh;
-    margin-left: 35vw;
+    // margin-bottom: 6vh;
+    // margin-left: 35vw;
     box-shadow: 10px 10px 15px rgb(0, 0, 20);
     display: flex;
     flex-direction: column;
@@ -77,14 +85,31 @@ div.container{
     background-color: white;
 }
 
+.history{
+    width: 30vw;
+    max-height: 88vh;
+    border: 2px solid white;
+    border-radius: 15px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.538);
+    overflow: auto;
+    font-size: 0.8rem;
+}
 
 
 @media screen and (max-width: 992px){
     div.container{
+        margin-top: 5vh;
         height: 80vh;
         margin-top: 10vh;
         width: 70vw;
-        margin-left: 15vw;
+        margin-bottom: 20px;
+    
+    }
+
+    .history{
+        width: 70vw;
+        height: 30vh;
     }
 
     .screen{
