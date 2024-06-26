@@ -27,7 +27,8 @@ header h1{
 .row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:space-evenly;
+    padding: 0px;
 }
 
 div.container{
@@ -36,8 +37,6 @@ div.container{
     border-radius: 15px;
     height: 88vh;
     width: 30vw;
-    // margin-bottom: 6vh;
-    // margin-left: 35vw;
     box-shadow: 10px 10px 15px rgb(0, 0, 20);
     display: flex;
     flex-direction: column;

@@ -22,7 +22,8 @@ header h1 {
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  padding: 0px;
 }
 
 div.container {
