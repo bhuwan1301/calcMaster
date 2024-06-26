@@ -27,16 +27,25 @@ document.getElementById("clearAll").addEventListener("click", function () {
 //back space
 document.getElementById("backspace").addEventListener("click", function () {
     let text = screenItem.innerHTML;
-    let lt = text.length;
-    screenItem.innerHTML = text.substring(0, lt - 1);
+    if (text != "Invalid expression") {
+        let lt = text.length;
+        screenItem.innerHTML = text.substring(0, lt - 1);
+    }
 })
 
 //items
-document.getElementById("%").addEventListener("click", function () {
+document.getElementById("leftPth").addEventListener("click", function () {
     if (screenItem.innerHTML == "Invalid expression") {
-        screenItem.innerHTML = "%";
+        screenItem.innerHTML = `(`;
     } else {
-        screenItem.innerHTML += "%";
+        screenItem.innerHTML += `(`;
+    }
+});
+document.getElementById("rightPth").addEventListener("click", function () {
+    if (screenItem.innerHTML == "Invalid expression") {
+        screenItem.innerHTML = `)`;
+    } else {
+        screenItem.innerHTML += `)`;
     }
 });
 
